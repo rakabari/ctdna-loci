@@ -72,6 +72,8 @@ python3 -m unittest discover -s tests -v
 
 The independent locus assumption, treatment of background rate uncertainty, and use of binary locus evidence are limitations of this baseline. A statistically significant result is not equivalent to an MRD diagnosis. Assay LoD, specificity, and reproducibility require representative controls and independently validated experimental samples.
 
-## License
+## Maintainer
 
-MIT.
+Ratilal Akabari  
+Senior Bioinformatics Scientist  
+Upstate Medical University  
