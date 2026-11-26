@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ctdna-loci"
+version = "0.1.0"
+description = "Locus-specific molecular background models and tumor-informed ctDNA evidence aggregation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+
+[project.scripts]
+ctdna-loci = "ctdna_loci.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ctdna_loci*"]
