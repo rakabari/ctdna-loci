@@ -1,6 +1,10 @@
 # ctDNA Loci
 
+Locus specific background error modeling and sample level statistical assessment for tumor informed circulating tumor DNA (ctDNA) detection
 
+This method characterizes locus specific background error rates using molecular count data from negative controls. Beta binomial predictive distributions account for uncertainty and variability in background error rates and estimate the probability of observing alternate molecules at individual loci. Statistical evidence is aggregated at the sample level based on the number of tracked tumor specific loci with at least one alternate molecule. An exact Poisson binomial upper tail probability quantifies the statistical significance of the observed signal under the null hypothesis of independent background errors among loci.
+
+The implementation uses deduplicated, independent molecular counts rather than raw sequencing read counts. Unique molecular identifier (UMI) consensus generation, tumor specific mutation selection, germline variant exclusion, and matched white blood cell filtering to remove potential hematopoietic variants are performed upstream and are outside the scope of this implementation.
 
 ## Install
 
